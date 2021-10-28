@@ -46,7 +46,7 @@ export class UserSaveComponent implements OnInit {
       .subscribe(
         data => {
           /*Toast.fire({type: 'success', title: 'Sign Up in successfully'});*/
-          this.router.navigate(['adminGetList']);
+          this.router.navigate(['getUserList']);
         },
         error => {
           if (error.status === 500) {

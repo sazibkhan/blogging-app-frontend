@@ -9,6 +9,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { UserListComponent } from './component/user-list/user-list.component';
 import { UserUpdateProfileComponent } from './component/user-update-profile/user-update-profile.component';
+import { BlogPostSaveComponent } from './component/blog-post-save/blog-post-save.component';
+import { BlogPostListComponent } from './component/blog-post-list/blog-post-list.component';
+import { BlogPostUpdateProfileComponent } from './component/blog-post-update-profile/blog-post-update-profile.component';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import { UserUpdateProfileComponent } from './component/user-update-profile/user
     AppComponent,
     UserSaveComponent,
     UserListComponent,
-    UserUpdateProfileComponent
+    UserUpdateProfileComponent,
+    BlogPostSaveComponent,
+    BlogPostListComponent,
+    BlogPostUpdateProfileComponent
 
 
   ],

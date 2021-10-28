@@ -14,8 +14,8 @@
 
       <thead>
       <tr>
-        <th scope="col">Admin Name</th>
-        <th scope="col">Admin Email</th>
+        <th scope="col">User Name</th>
+        <th scope="col"> Email</th>
         <th scope="col">Password</th>
         <th scope="col">Options</th>
       </tr>
@@ -26,7 +26,7 @@
 
         <td style="width: 30%">{{ userInfo.username }}</td>
         <td style="width: 30%">{{ userInfo.email }}</td>
-      <!--  <td style="width: 30%">{{userInfo.password }}</td>-->
+       <td style="width: 30%">{{userInfo.password }}</td>
         <td>
 
           <button (click)="onClickUserEdit(userInfo.id)"> Edit </button>
