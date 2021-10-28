@@ -1,0 +1,47 @@
+<div class="col-md-9 ibox">
+  <div class="ibox-head">
+    <div class="ibox-title alert-success text-center">User List</div>
+    <div class="input-group col-md-4">
+      <span class="input-group-prepend">
+        <div class="input-group-text bg-transparent border-right-0"><i class="fa fa-search"></i></div>
+      </span>
+      <input type="text" [(ngModel)]="searchText" autocomplete="on" placeholder="Name / Phone No."
+             class="form-control"/>
+    </div>
+  </div>
+  <div class="ibox-body">
+    <table class="table">
+
+      <thead>
+      <tr>
+        <th scope="col">User Name</th>
+        <th scope="col"> Email</th>
+        <th scope="col">Password</th>
+        <th scope="col">Options</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr *ngFor="let plogPosInfo of getBlogPostList">
+
+        <td style="width: 30%">{{ plogPosInfo.blogPostTitle }}</td>
+        <td style="width: 30%">{{ plogPosInfo.blogPostBody }}</td>
+
+        <td>
+
+          <button (click)="onClickBlogPostEdit(plogPosInfo.id)"> Edit </button>
+
+          <button (click)="onClickBlogPostDelete(plogPosInfo.id)" >Delete</button>
+
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="ibox-footer">
+    <div class="text-center">
+      <!-- <pagination-controls (pageChange)="pageChange($event)" class="my-pagination"></pagination-controls>-->
+    </div>
+
+  </div>
+</div>
